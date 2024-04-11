@@ -34,4 +34,8 @@ public class MainInterface extends JFrame {
     public static void main(String[] args) {
         new MainInterface();
     }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }

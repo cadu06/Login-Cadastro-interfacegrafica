@@ -1,48 +1,40 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Menu extends JFrame implements ActionListener { // Implementando ActionListener
+public class Menu extends JFrame implements ActionListener {
 
     private JPanel MenuPane;
     private JLabel Menu;
-    private JButton newButton = new JButton("New");
-    private JButton openButton = new JButton("Open");
-    private JButton saveButton = new JButton("Save");
-    private JButton exitButton = new JButton("Exit");
 
     public Menu() {
-        setContentPane(MenuPane);
-        setTitle("Menu");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(400, 300);
-        setLocationRelativeTo(null);
+        setTitle("Seção 2");
+        setSize(300, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
-        JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new GridLayout(4, 1));
+        JMenuBar menuBar = new JMenuBar();
 
-        buttonPanel.add(newButton);
-        buttonPanel.add(openButton);
-        buttonPanel.add(saveButton);
-        buttonPanel.add(exitButton);
+        JMenu menu1 = new JMenu("Menu 1");
+        JMenuItem menuItem1 = new JMenuItem("Item 1");
+        JMenuItem menuItem2 = new JMenuItem("Item 2");
+        menu1.add(menuItem1);
+        menu1.add(menuItem2);
 
-        newButton.addActionListener(this);
-        openButton.addActionListener(this);
-        saveButton.addActionListener(this);
-        exitButton.addActionListener(this);
+        JMenu menu2 = new JMenu("Menu 2");
+        JMenuItem menuItem3 = new JMenuItem("Item 3");
+        JMenuItem menuItem4 = new JMenuItem("Item 4");
+        menu2.add(menuItem3);
+        menu2.add(menuItem4);
 
-        add(buttonPanel);
+        menuBar.add(menu1);
+        menuBar.add(menu2);
+
+        setJMenuBar(menuBar);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == exitButton) {
-            System.exit(0);
-        } else {
-            // Implemente a lógica para os outros botões aqui
-            JOptionPane.showMessageDialog(this, "Botão pressionado: " + ((JButton)e.getSource()).getText());
-        }
+
     }
 }

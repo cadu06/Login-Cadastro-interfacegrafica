@@ -32,14 +32,6 @@
           <text value="Cadastrar "/>
         </properties>
       </component>
-      <component id="7b285" class="javax.swing.JLabel" binding="Senha">
-        <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Digite sua senha:"/>
-        </properties>
-      </component>
       <component id="a278b" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
         <constraints>
           <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
@@ -67,7 +59,7 @@
       </component>
       <component id="f073f" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Digite seu nome de usuário:"/>
@@ -87,10 +79,18 @@
       </component>
       <component id="9d86" class="javax.swing.JLabel">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Confirme sua senha:"/>
+        </properties>
+      </component>
+      <component id="7b285" class="javax.swing.JLabel" binding="Senha">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Digite sua senha:"/>
         </properties>
       </component>
     </children>
