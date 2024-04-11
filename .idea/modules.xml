@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InterfaceGrafica-LoginCadastro.iml" filepath="$PROJECT_DIR$/InterfaceGrafica-LoginCadastro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Login-Page.iml" filepath="$PROJECT_DIR$/Login-Page.iml" />
     </modules>
   </component>
 </project>

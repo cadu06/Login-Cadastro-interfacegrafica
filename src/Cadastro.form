@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Cadastro">
-  <grid id="27dc6" binding="CadastroPane" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="CadastroPane" layout-manager="GridLayoutManager" row-count="8" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-16777216"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="3ccad" class="javax.swing.JLabel" binding="SejaBemVindo">
@@ -13,8 +15,9 @@
           <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font size="20"/>
-          <text value="Seja bem vindo"/>
+          <background color="-1"/>
+          <font name="Monospaced" size="30" style="1"/>
+          <text value="Seja bem vindo!"/>
         </properties>
       </component>
       <vspacer id="5bab3">
@@ -27,70 +30,102 @@
           <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-16356864"/>
-          <foreground color="-16777216"/>
+          <background color="-9145228"/>
+          <font name="Monospaced" size="12" style="1"/>
+          <foreground color="-1"/>
           <text value="Cadastrar "/>
         </properties>
       </component>
-      <component id="a278b" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
-        <constraints>
-          <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-12602436"/>
-          <foreground color="-16777216"/>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="7978d" class="javax.swing.JPasswordField" binding="senhaPasswordField" default-binding="true">
-        <constraints>
-          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-12602436"/>
-          <foreground color="-16777216"/>
-          <text value=""/>
-          <toolTipText value=""/>
-        </properties>
-      </component>
-      <component id="f073f" class="javax.swing.JLabel">
+      <component id="f073f" class="javax.swing.JLabel" binding="usuárioLabel">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Digite seu nome de usuário:"/>
+          <font name="Monospaced" size="12" style="0"/>
+          <foreground color="-1"/>
+          <text value="Usuário:"/>
         </properties>
       </component>
-      <component id="cd15b" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+      <component id="cd15b" class="javax.swing.JTextField" binding="digiteSeuNomeDeTextField">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-12602436"/>
+          <background color="-9145228"/>
+          <font name="Monospaced" size="12" style="0"/>
           <foreground color="-16777216"/>
-          <text value=""/>
+          <text value="Digite seu nome de usuátrio:"/>
         </properties>
       </component>
-      <component id="9d86" class="javax.swing.JLabel">
+      <component id="9d86" class="javax.swing.JLabel" binding="confirmarSenhaLabel">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Confirme sua senha:"/>
+          <font name="Monospaced" size="12" style="0"/>
+          <foreground color="-1"/>
+          <text value="Confirmar senha:"/>
         </properties>
       </component>
-      <component id="7b285" class="javax.swing.JLabel" binding="Senha">
+      <component id="7b285" class="javax.swing.JLabel" binding="senhaLabel">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Monospaced" size="12" style="0"/>
+          <foreground color="-1"/>
+          <text value="Senha:"/>
+        </properties>
+      </component>
+      <component id="859c5" class="javax.swing.JTextField" binding="digiteSuaSenhaTextField">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-9145228"/>
+          <font name="Monospaced" size="12" style="0"/>
+          <foreground color="-16777216"/>
           <text value="Digite sua senha:"/>
+        </properties>
+      </component>
+      <component id="8c5ad" class="javax.swing.JTextField" binding="confirmeSuaSenhaTextField">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-9145228"/>
+          <font name="Monospaced" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Confirme sua senha:"/>
+        </properties>
+      </component>
+      <component id="d10cf" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9145228"/>
+          <enabled value="true"/>
+          <font name="Monospaced" size="12" style="1"/>
+          <foreground color="-1"/>
+          <text value="Já possui conta?"/>
+        </properties>
+      </component>
+      <component id="bd65f" class="javax.swing.JButton" binding="loginButton">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9145228"/>
+          <font name="Monospaced" size="12" style="1"/>
+          <foreground color="-1"/>
+          <text value="Login"/>
         </properties>
       </component>
     </children>

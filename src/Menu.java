@@ -3,13 +3,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Menu extends JFrame implements ActionListener {
-
-    private JPanel MenuPane;
-    private JLabel Menu;
-
     public Menu() {
-        setTitle("Seção 2");
-        setSize(300, 300);
+        setTitle("Menu");
+        setSize(1200, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
@@ -35,6 +31,5 @@ public class Menu extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
     }
 }
